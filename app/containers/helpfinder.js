@@ -3,6 +3,7 @@
 import React from 'react-native';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import Test from 'app/components/test'
 
 var {
   View,
@@ -28,6 +29,7 @@ class Helpfinder extends React.Component {
       <View style={{paddingTop: 100}}>
         <TouchableOpacity onPress={this.handlePress}>
           <Text>{this.props.foo}</Text>
+          <Test/>
         </TouchableOpacity>
       </View>
     );

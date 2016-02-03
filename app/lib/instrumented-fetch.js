@@ -1,5 +1,6 @@
 'use strict'
 
+import { Platform } from 'react-native'
 import hfConsole from './hf-console'
 
 // A counter so we can number the requests in case things are out of order:
@@ -9,7 +10,7 @@ var c=0
 window.logXHR = true
 
 // A copy of the function we'll be instrumenting:
-var origFetch = window.fetch
+import origFetch from 'app/lib/fetch'
 
 export default function instrumentedFetch(...args) {
   c++

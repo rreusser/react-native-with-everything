@@ -1,18 +1,17 @@
 'use strict'
 
+import { Platform } from 'react-native'
 import deepAssign from 'deep-assign'
 import queryString from 'query-string'
-import instrumentedFetch from 'app/lib/instrumented-fetch'
 
 // Maybe someday this will work to get network requests to show up in the
 // network requests tab in chrome, but for now it definitely does not:
 // delete GLOBAL.XMLHttpRequest;
 
-var fetch = window.fetch
+import origFetch from 'app/lib/fetch'
 
-if (true) {
-  fetch = instrumentedFetch
-}
+import instrumentedFetch from 'app/lib/instrumented-fetch'
+var fetch = true ? instrumentedFetch : origFetch
 
 export default store => next => action => {
   if (!action['API_CALL'] ) {
