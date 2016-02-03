@@ -10,31 +10,32 @@ var {
   TouchableOpacity
 } = React
 
+import {
+  tapButton
+} from 'app/actions/app'
+
 class Helpfinder extends React.Component {
   constructor(props) {
     super(props);
   }
 
   handlePress = () => {
-    console.log('hit')
+    this.props.dispatch(tapButton())
   };
 
   render() {
-    const { state, actions } = this.props;
     return (
       <View style={{paddingTop: 100}}>
         <TouchableOpacity onPress={this.handlePress}>
-          <Text>Hello</Text>
+          <Text>{this.props.foo}</Text>
         </TouchableOpacity>
       </View>
     );
   }
 }
 
-export default connect(state => ({
-    state: state.counter
-  }),
-  (dispatch) => ({
-    actions: bindActionCreators({}, dispatch)
-  })
-)(Helpfinder);
+export default connect(state => {
+  return {
+    foo: state.getIn(['app', 'foo'])
+  }
+})(Helpfinder);

@@ -10,12 +10,18 @@
   },
   "dependencies": {
     "app": "file:./app",
+    "deep-assign": "^2.0.0",
     "fbjs": "^0.6.0",
     "immutable": "^3.7.6",
+    "query-string": "^3.0.0",
     "react-native": "^0.19.0",
     "react-redux": "^4.1.2",
+    "recursive-diff": "^0.1.2",
     "redux": "^3.1.7",
     "redux-immutable": "^3.0.3",
     "redux-thunk": "^1.0.3"
+  },
+  "devDependencies": {
+    "remote-redux-devtools": "^0.1.1"
   }
 }

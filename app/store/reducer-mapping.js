@@ -2,14 +2,14 @@
 
 export default function reducerMapping (initialState, actionsMap) {
   return (state = initialState, action) => {
-    if (!action) {
-      return state
+    if (!state) {
+      return initialState
     }
     const reduceFn = actionsMap[action.type]
     if (!reduceFn) {
       return state
     }
 
-    return state
+    return reduceFn(state, action)
   }
 }

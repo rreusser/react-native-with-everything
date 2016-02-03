@@ -10,11 +10,11 @@ export default (reducers: Object) => {
   reducerKeys = Object.keys(reducers)
 
   return (inputState, action) => {
-    if (!action) {
+    if (!inputState) {
       return Immutable.Map(reducers).withMutations(map => {
         for (let i = 0; i < reducerKeys.length; i++) {
           let key = reducerKeys[i]
-          map.set(key, map.get(key)())
+          map.set(key, map.get(key)(null))
         }
       })
     }

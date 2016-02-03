@@ -1,6 +1,6 @@
 import React, { Component } from 'react-native'
 import { Provider } from 'react-redux'
-import configureStore from 'app/lib/redux/configure-store'
+import configureStore from 'app/store/configure-store'
 import Helpfinder from 'app/containers/helpfinder'
 
 var store = configureStore()

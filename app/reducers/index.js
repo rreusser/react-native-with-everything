@@ -1,6 +1,6 @@
 'use strict'
 
-import combineReducers from 'app/lib/redux/combine-reducers'
+import combineReducers from 'app/store/combine-reducers'
 import app from './app'
 
 export default combineReducers({
