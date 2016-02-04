@@ -22,7 +22,7 @@ export default function instrumentedFetch(...args) {
     hfConsole.groupEnd();
 
     return origFetch(...args).then((result) => {
-      if(result.status < 300) {
+      if(result.status < 300 || result.ok) {
         hfConsole.groupCollapsed('%c Resolve XHR(#'+i+'): ' + args[0], 'background: #cec;')
         hfConsole.info('Status:',result.status)
         if( result._bodyInit && result._bodyInit.length > 0 ) {

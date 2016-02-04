@@ -1,20 +1,29 @@
-# Helpfinder
+# react-native-kitchen-sink
+
+> Toward the dream of plugging all platforms into one app.
+
+![Demo](./demo.gif)
 
 ## Overview
 
-At the moment just an empty shell of an app using:
+Nothing new new here. Just standing on the shoulders of giants and trying to plug the iOS, Android, and web platforms into one app. The react native docs are good to point out that they don't intend for all platforms to share an identical user interface, so note that it's trivial to swap components depending on the platform. The goal is a simple template that covers the basics like basic reducer structure, api and logging middleware, etc.
 
 - [react-native](facebook.github.io/react-native)
 - [redux](https://github.com/rackt/redux)
+- [redux-devtools](https://github.com/gaearon/redux-devtools) (time-travel debugging)
 - [immutable.js](https://facebook.github.io/immutable-js/)
-- [react-web](https://github.com/taobaofed/react-web) (works (!), except the haste resolver module fails resolve `*.web.js`)
+- [react-web](https://github.com/taobaofed/react-web) (see: [taobaofed/react-web#55](https://github.com/taobaofed/react-web/issues/55) for currently-unresolved issue)
 
 ## Installation
 
-Requires npm v3. If you don't want to conflict with an existing npm v2 installation, try [npm3](https://www.npmjs.com/package/npm3). [linklocal](https://www.npmjs.com/package/linklocal) is used to avoid crazy relative paths. You just have to run it before `npm install` and it will create a symbolic link to `app/` in `node_modules`.
+Requires npm v3. If you don't want to conflict with an existing npm v2 installation, try [npm3](https://www.npmjs.com/package/npm3). [linklocal](https://www.npmjs.com/package/linklocal) is used to avoid crazy relative paths. Just run it before `npm install` and it will create a symbolic link to `app/` in `node_modules`.
 
 ```
 $ npm install -g linklocal
 $ linklocal
-$ npm install
+$ npm3 install
 ```
+
+## License
+
+[WTFPL](http://www.wtfpl.net/)

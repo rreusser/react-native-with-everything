@@ -1,14 +1,12 @@
 'use strict'
 
 import {
-  APP_TAP_BUTTON
+  APP_INCREMENT_COUNTER,
 } from 'app/reducers/app'
 
-export function tapButton () {
+export function incrementCounter () {
   return {
-    type: APP_TAP_BUTTON,
-    API_CALL: {
-      url: 'http://localhost:3000/api/v1/data'
-    }
+    type: APP_INCREMENT_COUNTER
   }
 }
+

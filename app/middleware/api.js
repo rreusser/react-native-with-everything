@@ -68,7 +68,7 @@ export default store => next => action => {
   }
 
   // Finally, run the api call
-  fetch(url, options).then(response => {
+  fetch(url, options).then((response,b,c) => {
     return response.json().then(json => {
       return {json: json, response: response};
     }, error => {
@@ -76,7 +76,7 @@ export default store => next => action => {
     });
   })
   .then(result => {
-    if (result.response.status < 300) {
+    if (result.response.status < 300 || result.response.ok) {
       if (apiCall.success) {
         return apiCall.success(result.json, result.response);
       }
