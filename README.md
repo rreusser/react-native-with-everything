@@ -1,4 +1,4 @@
-# react-native-kitchen-sink
+# react-native-with-everything
 
 > Toward the dream of plugging all platforms into one app, finishing early, and spending more time outside.
 
