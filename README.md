@@ -2,7 +2,9 @@
 
 > Toward the dream of plugging all platforms into one app, finishing early, and spending more time outside.
 
-![Demo](./demo.gif)
+![Demo](./demo.png)
+
+[See the side-by-side view in animation form](./demo.gif)
 
 ## Overview
 
