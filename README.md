@@ -2,10 +2,10 @@
 
 > Toward the dream of plugging all platforms into one app, finishing early, and spending more time outside.
 
-![Demo](./demo.png)
+[Click here for a live demo](http://rickyreusser.com/react-native-with-everything/) (not hooked up to an actual server)
 
-[Click here for a live demo](http://rickyreusser.com/react-native-with-everything/)
-[See the side-by-side view in animation form](./demo.gif) (not hooked up to an actual server)
+![Demo](./demo.png)
+[See the side-by-side view in animation form](./demo.gif)
 
 ## Overview
 
