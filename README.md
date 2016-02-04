@@ -6,7 +6,7 @@
 
 ## Overview
 
-Nothing new new here. Just standing on the shoulders of giants and trying to plug the iOS, Android, and web platforms into one app. The react native docs are good to point out that they don't intend for all platforms to share an identical user interface, so note that it's trivial to swap components depending on the platform. The goal is a simple template that covers the basics like basic reducer structure, api and logging middleware, etc.
+Nothing new new here. Just standing on the shoulders of giants and trying to plug the iOS, Android, and web platforms into one app. The react native docs are good to point out that they don't intend for all platforms to share an identical user interface, so note that it's trivial to swap components depending on the platform. The goal is a simple template that covers the basics like basic reducer structure, api and logging middleware, etc. I hope maybe something is useful. Take what you need!
 
 - [react-native](facebook.github.io/react-native)
 - [redux](https://github.com/rackt/redux)
