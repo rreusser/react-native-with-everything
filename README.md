@@ -4,7 +4,8 @@
 
 ![Demo](./demo.png)
 
-[See the side-by-side view in animation form](./demo.gif)
+[Click here for a live demo](http://rickyreusser.com/react-native-with-everything/)
+[See the side-by-side view in animation form](./demo.gif) (not hooked up to an actual server)
 
 ## Overview
 

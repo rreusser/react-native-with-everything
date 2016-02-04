@@ -13,7 +13,11 @@ import {
 
 import reducers from 'app/reducers'
 
-var middlewares = [thunkMiddleware, apiMiddleware, loggerMiddleware]
+var middlewares = [thunkMiddleware, apiMiddleware]
+
+if (true) {
+  middlewares.push(loggerMiddleware)
+}
 
 const finalCreateStore = compose(
   applyMiddleware(...middlewares),

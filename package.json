@@ -6,7 +6,9 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "setup": "npm run step1; npm run step2",
     "step1": "rm -rf node_modules/react-native/node_modules/react; rm -rf node_modules/react-native/node_modules/fbjs;  rm -rf node_modules/react/node_modules/fbjs",
-    "step2": "cd node_modules; find . -name .babelrc | grep -v packager | xargs rm"
+    "step2": "cd node_modules; find . -name .babelrc | grep -v packager | xargs rm",
+    "bundle-web": "rm -rf web/output && react-web bundle",
+    "deploy-web": "gh-pages -d web/output"
   },
   "dependencies": {
     "app": "file:./app",
@@ -28,6 +30,7 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
+    "gh-pages": "^0.9.0",
     "haste-resolver-webpack-plugin": "^0.1.4",
     "json-loader": "^0.5.4",
     "react-hot-loader": "^1.3.0",
