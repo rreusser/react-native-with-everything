@@ -2,7 +2,7 @@
 
 > Toward the dream of plugging all platforms into one app, finishing early, and spending more time outside.
 
-[Click here for a live demo](http://rickyreusser.com/react-native-with-everything/) (not hooked up to an actual server)
+[Click here for a live demo](http://rickyreusser.com/react-native-with-everything/) (not hooked up to an actual server. Also, check the js console to see our middleware logging strategy.)
 
 ![Demo](./demo.png)
 [See the side-by-side view in animation form](./demo.gif)
